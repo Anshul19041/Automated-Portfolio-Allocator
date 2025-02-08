@@ -1,3 +1,56 @@
-# Automated-Portfolio-Allocator
+# Investment Strategies using Python
 
-This project is a Python-based tool that allows investors to automatically allocate a given amount of capital across a portfolio of S&P 500 stocks. The tool fetches real-time stock data, such as prices and market capitalisation, and calculates the number of shares to buy for each stock based on the portfolio’s total value. The final result is exported to an Excel file in a formatted, easy-to-read structure. It is completed in 2 parts. First, we explore the fundamentals, such as data acquisition using APIs, structuring the data, and allocating the investment capital equally among all the stocks. In the 2nd part of the project, we use the data we retrieved using the API call to select the top 50 stocks based on a Quantitative Momentum-based investment strategy and then allocate the investment capital equally among them.
+## Overview
+
+This repository contains two quantitative investment strategies implemented in Python:
+
+Equal-Weight S&P 500 Index Fund - A strategy to create an equally weighted portfolio of all S&P 500 stocks.
+
+Quantitative Momentum Strategy - A strategy that selects the top 50 momentum stocks and allocates capital equally among them.
+
+## 1) Equal-Weight S&P 500 Index Fund
+
+### Description
+
+Unlike traditional market cap-weighted indices, this strategy allocates an equal proportion of capital to each stock in the S&P 500.
+
+### Features
+
+Fetches the latest S&P 500 stock list
+
+Calculates the equal-weight allocation for a given portfolio size
+
+Exports recommendations to an Excel file
+
+### Technologies Used
+
+Python Libraries: NumPy, Pandas, Requests, XlsxWriter, Math
+
+Data Processing: Fetching stock data, performing allocations
+
+Output: Generates an investment plan in a structured Excel format
+
+
+
+## 2) Quantitative Momentum Strategy
+
+### Description
+
+This project implements a momentum-based investment strategy, selecting the top 50 stocks with the highest price momentum and calculating equal-weight portfolio allocations.
+
+### Features
+
+Identifies high-momentum stocks based on recent price trends
+
+Allocates an equal-weight portfolio of the top 50 stocks
+
+Exports recommended trades to an Excel file
+
+### Technologies Used
+
+Python Libraries: NumPy, Pandas, Requests, XlsxWriter, SciPy
+
+Momentum Calculation: Uses statistical methods for ranking stocks
+
+Data Processing: Fetches stock lists and historical prices
+
